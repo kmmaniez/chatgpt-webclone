@@ -12,7 +12,7 @@ function loader(element) {
 
     loadInterval = setInterval(() => {
         element.textContent += '.';
-
+        
         if (element.textContent === '....') {
             element.textContent = '';
         }
@@ -92,11 +92,9 @@ const handleSubmit = async (e) => {
     if (response.ok) {
         const data        = await response.json();
         const parsedData  = data.bot.trim()  
-
         typeText(messageDiv, parsedData)
     } else {
         const err = await response.text()
-
         messageDiv.innerHTML = "Something went wrong"
         alert(err)
     }
