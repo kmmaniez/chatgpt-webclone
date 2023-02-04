@@ -1,7 +1,7 @@
 import bot from './assets/bot.svg'
 import user from './assets/user.svg'
 
-const BASE_URL      = 'https://cute-lime-goose-wig.cyclic.app/';
+const BASE_URL      = 'https://cute-lime-goose-wig.cyclic.app/'; // the url maybe can change
 const form          = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
 
